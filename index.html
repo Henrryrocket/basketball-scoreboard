@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-container">
+                <h3>HOME</h3>
+                <div class="home-score">
+                    <p class="home-score-value" id="home-score-value"></p>
+                </div>
+                <div class="home-buttons-container">
+                    <button class="home-button" id="home-plus-1" onclick="addPointHome()">+1</button>
+                    <button class="home-button" id="home-plus-2" onclick="addTwoPointsHome()">+2</button>
+                    <button class="home-button" id="home-plus-3" onclick="addThreePointsHome()">+3</button>
+
+                </div>
+                <button class="reset-button" id="home-reset" onclick="resetValuesHome()">RESET</button>
+            </div>
+            <div class="guest-container">
+                <h3>GUEST</h3>
+                <div class="guest-score">
+                    <p class="guest-score-value" id="guest-score-value"></p>
+                </div>
+                <div class="guest-buttons-container">   
+                    <button class="guest-button" id="guest-plus-1" onclick="addPointGuest()">+1</button>
+                    <button class="guest-button" id="guest-plus-2" onclick="addTwoPointsGuest()">+2</button>
+                    <button class="guest-button" id="guest-plus-3" onclick="addThreePointsGuest()">+3</button>
+                </div>
+                <button class="reset-button" id="guest-reset" onclick="resetValuesGuest()">RESET</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
